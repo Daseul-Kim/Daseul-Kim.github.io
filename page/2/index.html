@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -191,6 +191,135 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/03/TIL-210303/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daseul-Kim">
+      <meta itemprop="description" content="data science, digital marketing">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Digital marketing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/03/TIL-210303/" class="post-title-link" itemprop="url">TIL 210303</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-03-03 23:45:39 / Modified: 23:47:06" itemprop="dateCreated datePublished" datetime="2021-03-03T23:45:39+09:00">2021-03-03</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Shell command<br>cd : change directory</p>
+<p>mv : move</p>
+<p>mkdir : make directory</p>
+<p>rm/rm -rf : remove</p>
+<p>pwd : print working directory (see the directory is now working)</p>
+<p>touch : make a file</p>
+<p>vi : vim mode(im not sure)</p>
+<p>cat : concatenate (see what the file has)</p>
+<p>ls : see the list</p>
+<p>vim command<br>i : insert mode</p>
+<p>v : visual mode</p>
+<p>ESC : back to normal mode</p>
+<p>d : delete</p>
+<p>dd : delete a line</p>
+<p>y : yank</p>
+<p>yy : yank a line</p>
+<p>p : paste</p>
+<p>u : undo</p>
+<p>a : append</p>
+<p>A : append from end of line</p>
+<p>o : open line(under)</p>
+<p>O : open line(upper)</p>
+<p>H : move to the top of the screen</p>
+<p>L : move to the bottom of the screen</p>
+<p>shift + y = copy a line</p>
+<p>shift + ins = copy</p>
+<p>alt + ins = paste</p>
+<p>command mode<br>:q - quit</p>
+<p>:q! - quit discarding all changes</p>
+<p>:w - write</p>
+<p>:wq - write and quit</p>
+<p>:{number} - jump to {number}th line.</p>
+<p>what is it?<br>It helps to corporate with someone and it make us efficent to manage our code.</p>
+<p>why does it need?<br>when we work with colleague,we can share the part while working. I guess it is particulary helpful for agile method.</p>
+<p>how to use git?<br>first, launch the git for window in the internet…</p>
+<p>and … search on google!</p>
+<p>start project with git init<br>make repo</p>
+<p>$ mkdir first-repo &amp;&amp; cd first-repo</p>
+<p>$ git init</p>
+<p>$ git remote add origin <a target="_blank" rel="noopener" href="https://github.com/%7BDaseul-Kim%7D/%7Bfirst-repo%7D.git">https://github.com/{Daseul-Kim}/{first-repo}.git</a></p>
+<p>$ touch README.md</p>
+<p>$ git add README.md</p>
+<p>$ git add README.md</p>
+<p>$ git commit -m “docs:Create README.md”</p>
+<p>$ git push -u origin master</p>
+<p>start project with git clone<br>make repo in github</p>
+<p>git clone {repo address}</p>
+<p>git add .</p>
+<p>git commit</p>
+<p>git push</p>
+<p>make blog (by using github)<br>launch node.js</p>
+<p>use hexo</p>
+<p>enter npm install -g hexo-cli (if it needs permission, put sudo at first)</p>
+<p>hexo into myblog (in my case : hexo-blog)</p>
+<p>enter after put npm install</p>
+<p>if you want to write new post : enter after hexo new post “ bla bla” and then vi source/_posts/bla-bla.md</p>
+<p>write what you want (hexo transfer html automatically)</p>
+<p>enter after hexo clean &amp;&amp; hexo generate (and see generated : ~~~.html)</p>
+<p>check your posts ( it could be local server)</p>
+<p>let’s push it to git : we shoyld put in _config.yml below : npm install hexo-deployer-git –save</p>
+<p>copy your github.io address</p>
+<p>enter vi _config.yml &gt; we need to change (row:100) &gt;&gt; deploy: / type: git / repo: github.io.address / branch: main &gt;( no master!)</p>
+<p>(row:6) title: what i want / description: ‘what i wnat, bla’ / author : Daseul-Kim / lang,time : don’t touch</p>
+<p>(row:16) url : https://{username}.github.io</p>
+<p>let’s check it out to push by using : enter after hexo clean &amp;&amp; hexo deploy</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
