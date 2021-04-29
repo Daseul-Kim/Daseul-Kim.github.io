@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">41</span>
+          <span class="site-state-item-count">42</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -191,6 +191,241 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/04/29/GA-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daseul-Kim">
+      <meta itemprop="description" content="data science, digital marketing">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Digital marketing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/29/GA-3/" class="post-title-link" itemprop="url">GA-3</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-29 13:06:42 / Modified: 13:07:51" itemprop="dateCreated datePublished" datetime="2021-04-29T13:06:42+09:00">2021-04-29</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="1-보고서-개요"><a href="#1-보고서-개요" class="headerlink" title="1. 보고서 개요"></a>1. 보고서 개요</h3><ol>
+<li>실시간 : 실시간 방문자 로고 나타내는 보고서</li>
+</ol>
+<p>개요,위치,트래픽 소스, 콘텐츠,이벤트,전환 6가지의 보고서로 이루어지며, 실시간 유저 행동</p>
+<ol start="2">
+<li>잠재고객 : 방문한 고객의 특성에 대한 보고서</li>
+</ol>
+<p>크게 총 16개 보고서, 이 보고서를 통해 얻은 인사이트로 마케팅 전략 수립</p>
+<ol start="3">
+<li>획득: 획득된 방문자의 특성에 대한 보고서</li>
+</ol>
+<p>방문자가 웹사이트에 어떻게 도착하는지 알 수있음 (검색/광고/주소창)</p>
+<ol start="4">
+<li>행동 : 방문한 고객의 행동을 확인하는 보고서</li>
+</ol>
+<p>페이지 내에서 어떻게 행동하는지 알 수 있음</p>
+<ol start="5">
+<li>전환 : 고객 행동 중 비즈니스에 유의미한 행동인 전환을 살펴보는 보고서</li>
+</ol>
+<p>방문자가 전환을 얼마나 발생시켰는지(구매,장바구니,재방문 등의 목표 설정)</p>
+<h3 id="2-보고서-측정기준과-측정항목"><a href="#2-보고서-측정기준과-측정항목" class="headerlink" title="2. 보고서 측정기준과 측정항목"></a>2. 보고서 측정기준과 측정항목</h3><ol>
+<li>측정 기준 : 데이터의 속성</li>
+</ol>
+<ul>
+<li>측정기준을 트래픽 발생 위치 (지역/브라우저) 등을 나타냄, 조회한 페이지의 URL 보여줌</li>
+</ul>
+<ol start="2">
+<li>측정 항목 : 정량적 측정 요소</li>
+</ol>
+<ul>
+<li>세션 수 측정항목은 세션 총 세션 수</li>
+<li>세션 당 페이지수 측정항목은 세션당 발생한 평균 페이지 조회수</li>
+</ul>
+<h3 id="3-사용자-gt-세션-gt-히트의-위계-구조"><a href="#3-사용자-gt-세션-gt-히트의-위계-구조" class="headerlink" title="3. 사용자 &gt; 세션 &gt; 히트의 위계 구조"></a>3. 사용자 &gt; 세션 &gt; 히트의 위계 구조</h3><ol>
+<li>히트: 가장 작은 데이터 단위</li>
+</ol>
+<p>사용자가 하는 개별 상호작용</p>
+<p>페이지뷰, 이벤트, 거래 등을 각각 히트라고 함(GA코드는 페이지뷰 기본으로 추적)</p>
+<ol start="2">
+<li>세션 : 일정시간 동안 웹사이트 방문한 상태</li>
+</ol>
+<p>1회 방문동안 여러번의 히트 가능</p>
+<p>기본 세션 시간은은 30분</p>
+<ol start="3">
+<li>사용자 : 웹사이트 기술 한계상 쿠기 개념 사용</li>
+</ol>
+<ul>
+<li><p>쿠키 ?</p>
+</li>
+<li><p>세션 시간 : 히트가 기록되는 시간을 기준으로 기록</p>
+<p>  세션 종료 : 마지막 히트 이후 30분 경과시 세션 종료(웹브라우저 종료 안했을지라도)</p>
+<p>  이탈 : 첫번째 히트 이후 종료</p>
+</li>
+<li><p>활성사용자</p>
+<ol>
+<li><p>해당 기간 내 1회 이상 세션 발생시킨 사용자 - 활성사용자</p>
+</li>
+<li><p>1,7,14,28일 활성사용자가 있으며 날짜 선택</p>
+</li>
+<li><p>오번역 존재 : 우수사용자=활성사용자</p>
+</li>
+</ol>
+</li>
+<li><p>평생가치(LTV:Life Time Value)</p>
+<ol>
+<li><p>한 고객이 평생동안 회사에 기여하는 수익성을 현가로 나타낸 수치</p>
+</li>
+<li><p>측정항목 선택하여 계산 가능</p>
+</li>
+</ol>
+</li>
+<li><p>동질집단 분석</p>
+<ol>
+<li><p>아직 베타라 동질 집단 유형 설정은 불가능, 현재는 획득날짜로 설정</p>
+</li>
+<li><p>일/주/월별로 획득된 유저들의 기간 당 측정 항목 변화 알 수 있음</p>
+</li>
+</ol>
+</li>
+<li><p>잠재고객</p>
+<ol>
+<li><p>잠재고객 정의를 통해 구글 ads 광고 전달한 고객의 특성 파악</p>
+</li>
+<li><p>잠재 고객 정의를 하지 않으면 데이터 표시되지 않음</p>
+</li>
+</ol>
+</li>
+<li><p>사용자 탐색기</p>
+<ol>
+<li><p>쿠키 통해 사용자 1인 데이터 확인 가능</p>
+</li>
+<li><p>구글 애널리틱스가 제대로 트래킹 되는지 디버그 용도 가능</p>
+</li>
+<li><p>User ID 세팅하면 쿠키가 User ID로 맵핑됨</p>
+</li>
+</ol>
+</li>
+<li><p>인구통계 - 연령/성별</p>
+<ol>
+<li><p>쿠키에 저장된 활동 정보 바탕으로 비교하여 추정한 결과</p>
+</li>
+<li><p>정확도 높지 않아서 단순 참고 용도로 활용</p>
+</li>
+<li><p>구글 Ads의 인구통계 데이터와 일치하므로 구글 Ads 활용할 때 사용</p>
+</li>
+</ol>
+</li>
+<li><p>관심분야</p>
+<ol>
+<li><p>구글 쿠키 기반 설정해놓은 관심분야 분류</p>
+</li>
+<li><p>정확도 높지 않아서 참고용도</p>
+</li>
+</ol>
+</li>
+<li><p>지역- 언어/위치</p>
+<ol>
+<li><p>언어: 브라우저 언어 세팅 정보 수집</p>
+</li>
+<li><p>위치 : IP 주소를 통해 파악하므로 비교적 정확</p>
+</li>
+</ol>
+</li>
+<li><p>행동</p>
+<ol>
+<li><p>신규방문 vs 재방문</p>
+</li>
+<li><p>방문빈도 및 최근 구매일(방문 빈도와 패턴)</p>
+</li>
+<li><p>참여도(얼마나 길게 방문하고, 얼마나 많이 보는지)</p>
+</li>
+<li><p>세션 품질(구매 발생 세션이 얼마나 되는지)</p>
+</li>
+<li><p>전환가능성(1-100, 100이 제일 높은 가능성)</p>
+</li>
+</ol>
+</li>
+<li><p>기술</p>
+<ol>
+<li><p>브라우저 및 운영체재제 : 브라우저 데이터 바탕</p>
+</li>
+<li><p>네트워크 : IP 정보 바탕(통신사 정보 제공)</p>
+</li>
+</ol>
+</li>
+<li><p>모바일</p>
+<ol>
+<li>브라우저의 User Agent 정보 바탕으로 기기 파악</li>
+</ol>
+</li>
+<li><p>교차기기</p>
+<ol>
+<li><p>크로스 디바이스, 크로스 플랫폼 동일 식별 기술</p>
+</li>
+<li><p>User ID를 통해 파편화된 쿠키 데이터 정보 통합</p>
+</li>
+<li><p>기기 흐름이나 정보 알 수 있음</p>
+</li>
+</ol>
+</li>
+<li><p>맞춤</p>
+</li>
+<li><p>벤치마킹</p>
+<ol>
+<li><p>업계 기준치 통해 데이터 비교 가능</p>
+</li>
+<li><p>평균치 보다 어떤게 높고 낮은지 확인 가능2) 평균치 보다 어떤게 높고 낮은지 확인 가능</p>
+</li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1419,172 +1654,6 @@
 <li><p>광고 소재단 구성 : 광고 소재</p>
 </li>
 </ol>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/04/15/%EA%B5%AC%EA%B8%80%EB%A7%88%EC%BC%80%ED%8C%85-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Daseul-Kim">
-      <meta itemprop="description" content="data science, digital marketing">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Digital marketing">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/15/%EA%B5%AC%EA%B8%80%EB%A7%88%EC%BC%80%ED%8C%85-1/" class="post-title-link" itemprop="url">구글마케팅-1</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-04-15 21:52:09 / Modified: 21:53:15" itemprop="dateCreated datePublished" datetime="2021-04-15T21:52:09+09:00">2021-04-15</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="3-google-ads"><a href="#3-google-ads" class="headerlink" title="3. google ads"></a>3. google ads</h3><ul>
-<li><p>검색</p>
-</li>
-<li><p>디스플레이(배너)</p>
-</li>
-<li><p>영상</p>
-</li>
-<li><p>부동의 점유율 1위, 방대한 데이터 기반(국내 활용성 높은 DMP활용)</p>
-</li>
-<li><p>Ad Tech 최강자, 광고 플랫폼 집약체</p>
-</li>
-<li><p>mobile first의 우위를 가져갈 구글 플레이, 구글 플레이 매출도 증각</p>
-</li>
-<li><p>국내 사용 검색엔진에서 타사 점유율 약 70% 이상</p>
-</li>
-<li><p>마케터 스스로 운영을 하는 self-serve 중심 다양한 광고 유형으로 진입장벽이 높은 편</p>
-</li>
-<li><p>장점</p>
-<ol>
-<li><p>다양한 목적의 광고 가능 (브랜딩, 웹사이트 유입, 매출 증대, 앱다운 등)</p>
-</li>
-<li><p>다양하고 넓은 광고 지면과 유형 ( 다양한 형태로 여러 네트워크와 효과적인 유형 선택 가능</p>
-</li>
-<li><p>비즈니스 특성을 고려한 맞춤 광고 가능</p>
-</li>
-<li><p>광고 효과 측정 (광고 조회한 사용자 및 간접 전환까지 여러 지표를 통한 효과 측정 가능)</p>
-</li>
-<li><p>합리적 과금 방식 및 예산 효율성(적은 예산으로 시작 가능, 효율적 과금방식)</p>
-</li>
-<li><p>애드테크 기반 최적화(빈틈 없는 리마케팅과 광고 최적화 용이)</p>
-</li>
-</ol>
-</li>
-<li><p>google ads 구조</p>
-</li>
-<li><p>google ads 광고 절차</p>
-</li>
-<li><p>.구글 광고 게재 원리</p>
-<p>  최대 입찰가 X 품질평가 점수 = 광고게재 순위 </p>
-<blockquote>
-<blockquote>
-<p>일반적인 경매와 다르게 <strong>품질평가점수</strong>를 반영하여 우선순위 결정하는 원리</p>
-</blockquote>
-</blockquote>
-</li>
-<li><p>품질평가 점수</p>
-<ol>
-<li><p>광고 관련성 : 검색어, 키워드, 광고 소재 등의 상호 관련성</p>
-</li>
-<li><p>방문 페이지 품질 : 랜딩페이지와 광고 관련성, 사용자 편의성, 정보 투명성</p>
-</li>
-<li><p>예상 클릭율 : 유저가 실제로 광고에 얼마나 관심가지고 있는지</p>
-</li>
-</ol>
-<blockquote>
-<blockquote>
-<p>품질평가 점수 높으면 입찰비용 감소하고 게재 순위 상승 가능, </p>
-</blockquote>
-</blockquote>
-<p>  품질 좋은 광고 콘텐츠 갖춰야하는 이유</p>
-</li>
-<li><p>구글 마케팅 진행 과정</p>
-<p>  캠페인 목표 및 잠재고객 설정 &gt; 광고 Data 확인&amp;최적화 &gt; 광고 볼륨 확장</p>
-<ol>
-<li><p>캠페인 목표 설정 : 어떤 KPI 달성을 할 것인지 계획해야함, 마케팅 방향성, 우선순위</p>
-</li>
-<li><p>잠재고객 설정 : 우리 캠페인에 맞는 잠재 고객 설정이 중요</p>
-</li>
-<li><p>광고 최적화&amp; 볼륨확장 : data 기반 전환 볼륨 확장을 위한 캠페인 진행하여 최적화</p>
-</li>
-</ol>
-<ul>
-<li><p>단계별 캠페인 목표 : 인지도 확보 / 고려도 증대 / 전환</p>
-<p>  고객의 구매 여정 윗단계인 획득부터 구매 이르기 까지 단계별 캠페인 목표에 맞게 광고 운영하는 것이 중요</p>
-<ol>
-<li>인지도 확보 (브랜드 인지도, 도달 및 노출 확보 및 제품 홍보)</li>
-</ol>
-<ul>
-<li>타겟 CPM : 유투브 광고에 사용되는 입찰 방식,SKIP 없는 6초 범퍼광고나 Trueview for reach에 사용되는 1000회 노출 당 최대 지불 금액 설정</li>
-<li>최대 CPV : 유트부 광고에 사용되는 입찰 방식, SKIP 있는 선택할 수 있는 조회당 지불할 최대 금액 설정, 30초 조회당 과금 방식</li>
-<li>타겟 노출 점유율 : 광고 노출되는 것이 중요 목표일때 원하는 위치 얼마나 자주 노출되고 싶냐에 따라 입찰</li>
-</ul>
-<ol start="2">
-<li>고려도 증대(고객 웹사이트 유입, 리마케팅위한 잠재고객 확보)</li>
-</ol>
-<ul>
-<li>수동 CPC : 디스플레이, 검색, 쇼핑 , 클릭 당 지불할 최대 금액 광고주고 직접 설정</li>
-<li>클릭수 최대화 : 설정 예산 내에서 클릭 수 최대한 높이기 위한 자동 입찰 전략</li>
-</ul>
-<ol start="3">
-<li>전환(회원가입, 장바구니 담기, 실질적인 매출 위한 전환 획득)</li>
-</ol>
-<ul>
-<li>향상된 CPC : 수동 CPC 입찰 전략 사용하나 전환 가능성 높은 클릭에 대해 최대 30%까지 입찰가 높여 적극적 전환 유도하기 위한 입찰 전략</li>
-<li>전환수 최대화 : 설정 예산 내에서 CPA 고려 X 전환수 최대한 높이기 위한 입찰 전략</li>
-<li>타겟 CPA : 설정한 타겟 전환 비용 내에서 전환 수 높일 수 있도록 입찰가 자동 설정되는 입찰 전략</li>
-<li>타겟 ROAS : 설정한 타겟 투자 수익 내에 전환가치 최대한 높일 수있도록 입찰가 자동 설정하는 입찰전략(전환 액션 세팅 시 전환가치 세팅 필요)</li>
-</ul>
-</li>
-</ul>
 </li>
 </ul>
 
