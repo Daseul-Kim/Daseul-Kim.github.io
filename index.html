@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">42</span>
+          <span class="site-state-item-count">43</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -191,6 +191,182 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/04/30/GA-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daseul-Kim">
+      <meta itemprop="description" content="data science, digital marketing">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Digital marketing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/30/GA-4/" class="post-title-link" itemprop="url">GA-4</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-30 23:01:20 / Modified: 23:02:40" itemprop="dateCreated datePublished" datetime="2021-04-30T23:01:20+09:00">2021-04-30</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="4-구글-애널리틱스가-유저가-어디서-왔는지-어떻게-알까"><a href="#4-구글-애널리틱스가-유저가-어디서-왔는지-어떻게-알까" class="headerlink" title="4. 구글 애널리틱스가 유저가 어디서 왔는지 어떻게 알까"></a>4. 구글 애널리틱스가 유저가 어디서 왔는지 어떻게 알까</h3><ul>
+<li><p>Referrer 값</p>
+<ol>
+<li><p>직접(direct/none) : referrer 없음</p>
+</li>
+<li><p>추천(domain/referral) : referrer 값 있음</p>
+</li>
+<li><p>Organic(channel/organic) : referrer 값(검색엔진)이 있고, 검색쿼리(키워드)가 있음</p>
+</li>
+</ol>
+</li>
+<li><p>URL 파라미터</p>
+<p>   Key, Value가 쌍으로 존재하는 파라미터 기록, 여러 파라미너틑 &amp;로 연결해서 사용가능</p>
+<p>  활성 파라미터와 사용하지 않는 수동파라미터가 존재</p>
+<p>   ? 추가하여 key=value 모양의 파라미터를 추가할 수 있으며, 여러 개의 파라미터는 &amp;으로 연결해서 사용가능</p>
+</li>
+<li><p>캠페인 파라미터</p>
+<p>  UTM 은 Urchin Tracking Module의 줄임말로 URL뒤에 붙어서 GA에 해당링크 정보 전달</p>
+<ul>
+<li><p>종류</p>
+</li>
+<li><p>GA source/medium 처리 로직</p>
+<ol>
+<li>구글  광고를 통한 유입 확인</li>
+</ol>
+<p>  google / cpc 또는 google / banner</p>
+<ol start="2">
+<li>utm 파라미터 확인</li>
+</ol>
+<p>  utm 파라미터 설정 값대로</p>
+<ol start="3">
+<li>검색 엔진(organic) 유입 확인, 키워드 확인</li>
+</ol>
+<p>  검색 엔진 이름 / organic</p>
+<ol start="4">
+<li>웹사이트 referrer 정보 확인</li>
+</ol>
+<p>  referrer 도메인 / referral</p>
+<ol start="5">
+<li>직접 유입</li>
+</ol>
+<p>  (direct) / (none)</p>
+</li>
+</ul>
+</li>
+<li><p>유저 행동과 주요지표</p>
+<ul>
+<li><p>페이지 방문 관련 측정 항목</p>
+<p>  페이지 뷰 수 : 유저가 특정 페이지에 방문하여 일으킨 뷰 횟수, 방문할때마다 카운트</p>
+<p>  순 페이지 뷰 수 : 세션 1회당 페이지 뷰 1회로 계산 (페이지 뷰 1회이상 기록 세션 수)</p>
+<p>  방문 수 : 서비스를 방문하여 세션 시작한 수, 전체 방문수는 전체 세션의 숫자와 동일</p>
+<ul>
+<li>예시</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- 페이지 종료 관련 측정 항목
+
+    종료 : 세션이 종료됨을 의미함
+
+    종료율 : 해당 페이지 종료 수 / 해당 페이지뷰 수
+
+    이탈 : 방문 페이지, 세션 시작 페이지에서 세션이 종료됨
+
+    이탈률 : 해당 페이지에서 이탈한 수 / 해당 페이지 방문 수(랜딩 페이지로서 성과 측정 필요, 잘만들어져 있어 성과 측정 가능)
+
+    종료율 : 페이지 머문 시간, 페이지 뷰 수 등과 복합적 비교를 통한 성과파악(전체 페이지 뷰 대비 데이터 이기 때문에 성과 가지고 좋다 나쁘다 평가 x)
+
+    - 예시
+
+- 페이지 가치 관련 측정 항목
+</code></pre>
+<ul>
+<li><p>웹 사이트 내 행동</p>
+<p>  고객의 웹 사이트 내 행동은 어떻게 측정할까 ?</p>
+<ul>
+<li><p>이벤트의 개념</p>
+<p>  카테고리 : 이벤트 유형 의미하는 가장 큰 단위 값</p>
+<p>  액션 : 이벤트 행동 의미하는 값 <strong>(필수값)</strong></p>
+<p>  라벨 : 이벤트에 따른 추가적 정보 입력</p>
+<p>  값 : 이벤트 가치에 대한 설정</p>
+<p>  이벤트 코드 삽입 : javascript 코드 삽입 통해 설정 가능</p>
+<p>  액션만 gtag(‘event’,’signup’)</p>
+<p>  액션 카테고리 라벨 값 —-GTM 활용</p>
+<ul>
+<li><p>행동보고서 (이벤트)</p>
+<ol>
+<li><p>구글 애널리틱스에 전송된 이벤트( 고객이 페이지 뷰 제외하고 한 행동)의 데이터를 볼 수 있는 보고서</p>
+</li>
+<li><p>인기 이벤트 : 어떤 이벤트가 발생했는지 한 눈에 볼 수 있는 차트</p>
+</li>
+</ol>
+<ul>
+<li>총 이벤트 수 : 전체 이벤트 수</li>
+<li>순 이벤트 수 ; 세션 당 여러번 발생한 이벤트는 한번으로 취급한 이벤트</li>
+<li>이벤트 값 : 이벤트 값 세팅한 값을 의미</li>
+<li>평균 값 : 이벤트 값 / 총 이벤트 수</li>
+</ul>
+<ol start="3">
+<li><p>페이지: 페이지 별로 이벤트 수 비교</p>
+</li>
+<li><p>이벤트 흐름 : 행동 흐름을 이벤트로 봄</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1474,184 +1650,6 @@
 <li><p>방문 고객 고려도 증가 : 리마케팅 광고 통해 기존 방문 고객 리타겟팅</p>
 </li>
 <li><p>제품에 대한 검색 유도 : 우리 제품을 인지한 고객의 검색 유도</p>
-</li>
-</ol>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/04/17/%EA%B5%AC%EA%B8%80-%EC%95%A0%EC%A6%88-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Daseul-Kim">
-      <meta itemprop="description" content="data science, digital marketing">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Digital marketing">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/17/%EA%B5%AC%EA%B8%80-%EC%95%A0%EC%A6%88-1/" class="post-title-link" itemprop="url">구글 애즈-1</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-04-17 23:37:50 / Modified: 23:38:19" itemprop="dateCreated datePublished" datetime="2021-04-17T23:37:50+09:00">2021-04-17</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="3-검색광고"><a href="#3-검색광고" class="headerlink" title="3. 검색광고"></a>3. 검색광고</h3><ul>
-<li><p>검색광고의 필요성:</p>
-<p>  인지 → 탐색 → 고려 → 전환 : 탐색 단계는 고객이 니즈가 있는 상태이기 때문에 전환확률 높아짐</p>
-</li>
-<li><p>영상광고-(노출)-디스플레이광고-(방문유도)-검색광고-(전환)</p>
-</li>
-<li><p>특징</p>
-<ol>
-<li><p>사용자 특성보다 사용자 검색어와 키워드 매칭이 중요</p>
-</li>
-<li><p>자발적 니즈 가지고 검색할때 노출되는 광고로 타 유형 광고 대비 높은 전환율</p>
-</li>
-<li><p>검색량이 노출량이 되며 검색엔진의 검색량에 따라 결정됨</p>
-</li>
-</ol>
-</li>
-<li><p>검색광고의 핵심요소</p>
-<ol>
-<li><p>키워드 : 구체적 키워드 설정</p>
-</li>
-<li><p>광고문안(T&amp;D)/광고소재 : 효과적으로 작성하여 클릭 유도</p>
-</li>
-<li><p>CPC 입찰가 : 경쟁사 광고 대비 내 광고를 우선순위에 올릴 수 있음</p>
-</li>
-</ol>
-<ul>
-<li><p>광고 게재 순위 고려</p>
-<p>  품질평가점수란?</p>
-<ul>
-<li>광고 관련성 : 키워드와 광고 소재의 관련성 평가하는 항목</li>
-<li>방문페이지 품질 : 랜딩페이지가 실제 광고 클릭해 유저에게 얼마나 유용한지 평가</li>
-<li>예상 클릭율 : 클릭 가능성을 보여주는 지표로 다른 광고주들의 키워드 실적을 고려</li>
-</ul>
-</li>
-<li><p>구글 검색 광고소재의 두 가지 유형</p>
-<ul>
-<li>텍스트 광고 (흔한 경우)</li>
-<li>반응형 검색광고 (제목, 문구 설정하면 머신러닝으로 자동완성되는 다양한 광고 소재)</li>
-</ul>
-<p>  — 효과적으로 만들기 위해서 → 광고관련성을 높여주어야함</p>
-<ol>
-<li>광고제목 2) 광고설명</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>검색광고의 최적화 목표</p>
-<p>  CPC(Cost Per Click) ↓ CPA (Cost Per Acquisition)↓ CVR ↑(Conversion rate) :</p>
-<p>  검갱광고 경우 광고품질점수 상승 기반 CPC 개선하여 CPA 단가 절감이 가장 큰 최적화 목표, 이에 따라 전환율 일부 개선 가능</p>
-</li>
-<li><p>검색광고 키워드</p>
-<p>  일치 금색 &lt; 구문 검색 &lt; 확장검색 순으로 검색량이 많음</p>
-<p>  : 구글 광고를 운영할 때는 일치검색으로 시작하여 효율 키워드 중심으로 점차적 확대해나갈 것</p>
-<blockquote>
-<p>대표키워드 : 검색 쿼리가 가장 높은 만큼 입찰 경쟁도 치열</p>
-</blockquote>
-<blockquote>
-<p>세부키워드 : 검색 쿼리가 적은 만큼 입찰 경쟁도 적음</p>
-</blockquote>
-</li>
-<li><p>구글 검색 광고의 강점</p>
-<ol>
-<li><p>경쟁사 키워드 : 타사 브랜드 키워드 광고 가능 경쟁사 검색한 고객을 내 웹사이트로 방문 유도</p>
-</li>
-<li><p>광고 확장: 추가적인 클릭 영역 확보 가능, 광고 확장 통해 평균 10-15% 클릭율 상승</p>
-</li>
-</ol>
-<ul>
-<li>사이트링크 : 추가적인 링크 삽입(사이트 인지효과/인게이먼트증가/전환율증가)</li>
-<li>콜아웃 : 비즈니스 설명(인게이지먼트증가/USP 소구:비즈니스 강점)</li>
-<li>구조화된 스니펫 : 서비스 상세 범위 안내할때 사용(전환가능성 높은 유저 방문 유도)</li>
-</ul>
-<ol start="3">
-<li>효율적 CPC : 검색량은 적지만 키워드 입찰 경쟁이 적으므로 상대적 저렴한 입찰가로 우수한 키워드 낙찰 가능</li>
-</ol>
-<p>  ++++ 효과적인 광고 소재 만들기_<strong>반응형 검색광고</strong>(아직 beta):</p>
-<p>  광고 제목 및 설명을 복수로 제공하면 머신이  다양한 조합으로 최적화된 광고 내보내줌</p>
-<ul>
-<li><p>TIP</p>
-<ol>
-<li><p>키워드는 대표키워드 보다 세부키워드가 높은 품질 평가지수 획득</p>
-</li>
-<li><p>광고그룹 : 광고 그룹은 제품 카테고리나, 키워드 유형별로 그룹핑하는 것이 광고 용이</p>
-</li>
-<li><p>광고 문구 내에 키워드 포함하는 것이 광고 관련성을 높여서 높은 품질 평가 지수 획득</p>
-</li>
-<li><p>신규 캠페인과 리마케팅 캠페인을 분리하여 운영하는 것을 추천</p>
-</li>
-<li><p>광고확장기능을 적극 활용하여 클릭 영역 넓혀 광고 운영</p>
-</li>
-<li><p>확장형 텍스트 광고에 광고 제목과 설명 모두 넣어 관련성 높은 소재 되도록 운영</p>
-</li>
-<li><p>반응형 검색광고 소재를 활용하면 높은 클릭율과 전환성과 얻을 수 있음</p>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>검색광고 게재지면</p>
-<ol>
-<li>Google 검색결과 2) Google Play 검색결과 3) Google 쇼핑&amp;지도 4) Google 검색 파트너</li>
-</ol>
-</li>
-<li><p>검색캠페인 구조</p>
-<ol>
-<li><p>캠페인 : 캠페인 유형/목표/광고 네트워크/위치/언어/입찰전략/예산 등</p>
-</li>
-<li><p>광고그룹 : 키워드/입찰가 등</p>
-</li>
-<li><p>광고 소재단 구성 : 광고 소재</p>
 </li>
 </ol>
 </li>
