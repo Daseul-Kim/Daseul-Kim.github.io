@@ -23,20 +23,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"daseul-kim.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="4. 구글 애널리틱스가 유저가 어디서 왔는지 어떻게 알까 Referrer 값  직접(direct&#x2F;none) : referrer 없음  추천(domain&#x2F;referral) : referrer 값 있음  Organic(channel&#x2F;organic) : referrer 값(검색엔진)이 있고, 검색쿼리(키워드)가 있음    URL 파라미터    Key, Value">
+<meta name="description" content="세그먼트의 이해  특정 측정 기준을 선택하여 요약 값 보기  하나씩 클릭하면서 확인해봐야 인사이트 얻을 수 있음     구글 애즈를 통한 리마케팅 : 다양한 광고 매체에 광고 집행  구글 애널리틱스와 구글 애즈 연동의 장점  google ads에서의 광고 집행 정보, 광고 노출수&#x2F;클릭수&#x2F;광고 비용 등을 google analytics에서 함께 보고 분석 가">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GA-4">
-<meta property="og:url" content="https://daseul-kim.io/2021/04/30/GA-4/index.html">
+<meta property="og:title" content="GA-7">
+<meta property="og:url" content="https://daseul-kim.io/2021/05/03/GA-7/index.html">
 <meta property="og:site_name" content="Digital marketing">
-<meta property="og:description" content="4. 구글 애널리틱스가 유저가 어디서 왔는지 어떻게 알까 Referrer 값  직접(direct&#x2F;none) : referrer 없음  추천(domain&#x2F;referral) : referrer 값 있음  Organic(channel&#x2F;organic) : referrer 값(검색엔진)이 있고, 검색쿼리(키워드)가 있음    URL 파라미터    Key, Value">
+<meta property="og:description" content="세그먼트의 이해  특정 측정 기준을 선택하여 요약 값 보기  하나씩 클릭하면서 확인해봐야 인사이트 얻을 수 있음     구글 애즈를 통한 리마케팅 : 다양한 광고 매체에 광고 집행  구글 애널리틱스와 구글 애즈 연동의 장점  google ads에서의 광고 집행 정보, 광고 노출수&#x2F;클릭수&#x2F;광고 비용 등을 google analytics에서 함께 보고 분석 가">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-30T14:01:20.000Z">
-<meta property="article:modified_time" content="2021-04-30T14:02:40.513Z">
+<meta property="article:published_time" content="2021-05-03T12:29:55.000Z">
+<meta property="article:modified_time" content="2021-05-03T12:30:42.872Z">
 <meta property="article:author" content="Daseul-Kim">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://daseul-kim.io/2021/04/30/GA-4/">
+<link rel="canonical" href="https://daseul-kim.io/2021/05/03/GA-7/">
 
 
 <script class="page-configurations">
@@ -48,7 +48,7 @@
     lang   : 'en'
   };
 </script>
-<title>GA-4 | Digital marketing</title>
+<title>GA-7 | Digital marketing</title>
   
 
 
@@ -134,7 +134,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -147,7 +147,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%EA%B5%AC%EA%B8%80-%EC%95%A0%EB%84%90%EB%A6%AC%ED%8B%B1%EC%8A%A4%EA%B0%80-%EC%9C%A0%EC%A0%80%EA%B0%80-%EC%96%B4%EB%94%94%EC%84%9C-%EC%99%94%EB%8A%94%EC%A7%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%95%8C%EA%B9%8C"><span class="nav-number">1.</span> <span class="nav-text">4. 구글 애널리틱스가 유저가 어디서 왔는지 어떻게 알까</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -204,7 +203,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/04/30/GA-4/">
+    <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/05/03/GA-7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -217,7 +216,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          GA-4
+          GA-7
         </h1>
 
         <div class="post-meta-container">
@@ -229,7 +228,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-04-30 23:01:20 / Modified: 23:02:40" itemprop="dateCreated datePublished" datetime="2021-04-30T23:01:20+09:00">2021-04-30</time>
+      <time title="Created: 2021-05-03 21:29:55 / Modified: 21:30:42" itemprop="dateCreated datePublished" datetime="2021-05-03T21:29:55+09:00">2021-05-03</time>
     </span>
 
   
@@ -242,118 +241,77 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="4-구글-애널리틱스가-유저가-어디서-왔는지-어떻게-알까"><a href="#4-구글-애널리틱스가-유저가-어디서-왔는지-어떻게-알까" class="headerlink" title="4. 구글 애널리틱스가 유저가 어디서 왔는지 어떻게 알까"></a>4. 구글 애널리틱스가 유저가 어디서 왔는지 어떻게 알까</h3><ul>
-<li><p>Referrer 값</p>
-<ol>
-<li><p>직접(direct/none) : referrer 없음</p>
-</li>
-<li><p>추천(domain/referral) : referrer 값 있음</p>
-</li>
-<li><p>Organic(channel/organic) : referrer 값(검색엔진)이 있고, 검색쿼리(키워드)가 있음</p>
-</li>
-</ol>
-</li>
-<li><p>URL 파라미터</p>
-<p>   Key, Value가 쌍으로 존재하는 파라미터 기록, 여러 파라미너틑 &amp;로 연결해서 사용가능</p>
-<p>  활성 파라미터와 사용하지 않는 수동파라미터가 존재</p>
-<p>   ? 추가하여 key=value 모양의 파라미터를 추가할 수 있으며, 여러 개의 파라미터는 &amp;으로 연결해서 사용가능</p>
-</li>
-<li><p>캠페인 파라미터</p>
-<p>  UTM 은 Urchin Tracking Module의 줄임말로 URL뒤에 붙어서 GA에 해당링크 정보 전달</p>
+        <ol>
+<li><p>세그먼트의 이해</p>
+<p> 특정 측정 기준을 선택하여 요약 값 보기</p>
 <ul>
-<li><p>종류</p>
+<li>하나씩 클릭하면서 확인해봐야 인사이트 얻을 수 있음</li>
+</ul>
 </li>
-<li><p>GA source/medium 처리 로직</p>
-<ol>
-<li>구글  광고를 통한 유입 확인</li>
 </ol>
-<p>  google / cpc 또는 google / banner</p>
 <ol start="2">
-<li>utm 파라미터 확인</li>
-</ol>
-<p>  utm 파라미터 설정 값대로</p>
-<ol start="3">
-<li>검색 엔진(organic) 유입 확인, 키워드 확인</li>
-</ol>
-<p>  검색 엔진 이름 / organic</p>
-<ol start="4">
-<li>웹사이트 referrer 정보 확인</li>
-</ol>
-<p>  referrer 도메인 / referral</p>
-<ol start="5">
-<li>직접 유입</li>
-</ol>
-<p>  (direct) / (none)</p>
-</li>
-</ul>
-</li>
-<li><p>유저 행동과 주요지표</p>
+<li><p>구글 애즈를 통한 리마케팅 : 다양한 광고 매체에 광고 집행</p>
 <ul>
-<li><p>페이지 방문 관련 측정 항목</p>
-<p>  페이지 뷰 수 : 유저가 특정 페이지에 방문하여 일으킨 뷰 횟수, 방문할때마다 카운트</p>
-<p>  순 페이지 뷰 수 : 세션 1회당 페이지 뷰 1회로 계산 (페이지 뷰 1회이상 기록 세션 수)</p>
-<p>  방문 수 : 서비스를 방문하여 세션 시작한 수, 전체 방문수는 전체 세션의 숫자와 동일</p>
-<ul>
-<li>예시</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>- 페이지 종료 관련 측정 항목
-
-    종료 : 세션이 종료됨을 의미함
-
-    종료율 : 해당 페이지 종료 수 / 해당 페이지뷰 수
-
-    이탈 : 방문 페이지, 세션 시작 페이지에서 세션이 종료됨
-
-    이탈률 : 해당 페이지에서 이탈한 수 / 해당 페이지 방문 수(랜딩 페이지로서 성과 측정 필요, 잘만들어져 있어 성과 측정 가능)
-
-    종료율 : 페이지 머문 시간, 페이지 뷰 수 등과 복합적 비교를 통한 성과파악(전체 페이지 뷰 대비 데이터 이기 때문에 성과 가지고 좋다 나쁘다 평가 x)
-
-    - 예시
-
-- 페이지 가치 관련 측정 항목
-</code></pre>
-<ul>
-<li><p>웹 사이트 내 행동</p>
-<p>  고객의 웹 사이트 내 행동은 어떻게 측정할까 ?</p>
-<ul>
-<li><p>이벤트의 개념</p>
-<p>  카테고리 : 이벤트 유형 의미하는 가장 큰 단위 값</p>
-<p>  액션 : 이벤트 행동 의미하는 값 <strong>(필수값)</strong></p>
-<p>  라벨 : 이벤트에 따른 추가적 정보 입력</p>
-<p>  값 : 이벤트 가치에 대한 설정</p>
-<p>  이벤트 코드 삽입 : javascript 코드 삽입 통해 설정 가능</p>
-<p>  액션만 gtag(‘event’,’signup’)</p>
-<p>  액션 카테고리 라벨 값 —-GTM 활용</p>
-<ul>
-<li><p>행동보고서 (이벤트)</p>
+<li><p>구글 애널리틱스와 구글 애즈 연동의 장점</p>
 <ol>
-<li><p>구글 애널리틱스에 전송된 이벤트( 고객이 페이지 뷰 제외하고 한 행동)의 데이터를 볼 수 있는 보고서</p>
+<li><p>google ads에서의 광고 집행 정보, 광고 노출수/클릭수/광고 비용 등을 google analytics에서 함께 보고 분석 가능</p>
 </li>
-<li><p>인기 이벤트 : 어떤 이벤트가 발생했는지 한 눈에 볼 수 있는 차트</p>
+<li><p>google ads에서 google analytics 사용자 데이터 확인 가능</p>
+</li>
+<li><p>전환 연결하여 트래킹 가능</p>
+</li>
+<li><p>google analytics의 유저 데이터를 google ads로 보내서 잠재고객 타겟팅 가능</p>
 </li>
 </ol>
 <ul>
-<li>총 이벤트 수 : 전체 이벤트 수</li>
-<li>순 이벤트 수 ; 세션 당 여러번 발생한 이벤트는 한번으로 취급한 이벤트</li>
-<li>이벤트 값 : 이벤트 값 세팅한 값을 의미</li>
-<li>평균 값 : 이벤트 값 / 총 이벤트 수</li>
+<li>연동방법</li>
+</ul>
+</li>
+<li><p>google ads와 google analytics 연동</p>
+<p>  [설정]→[속성]→[제품연결하기]→[google ads] 연결</p>
+</li>
+<li><p>google ads와 google analytics 잠재고객 연결</p>
+<p>  [설정]→[속성]→[잠재고객정의]→[첫번째 잠재고객 만들기]</p>
+<p>  세그먼트 가져오기도 가능</p>
+</li>
 </ul>
 <ol start="3">
-<li><p>페이지: 페이지 별로 이벤트 수 비교</p>
+<li>맞춤 측정 기준/항목</li>
+</ol>
+<ul>
+<li><p>logged in status : 원하는 데이터 마케터가 설정 후 개발자에게 설정 부탁(gtqg)</p>
 </li>
-<li><p>이벤트 흐름 : 행동 흐름을 이벤트로 봄</p>
+<li><p>맞춤보고서 만들기</p>
+<ol>
+<li><p>탐색기 : 다른 보고서에서 볼 수 있는 내용들</p>
+</li>
+<li><p>플랫 표 : 보조측정기준 추가한 거랑 유사하게 도출, 측정기준 여러개 선택가능</p>
+<pre><code>      실무단에서 하나하나 봐야할때, 데이터 수집해서 시각화해야할때 자주 봄
+</code></pre>
+</li>
+<li><p>방문자 분포 : 특정 위치에 따른 방문자 분포</p>
 </li>
 </ol>
 </li>
 </ul>
-</li>
+<ol start="4">
+<li>콘텐츠 분류</li>
+</ol>
+<ul>
+<li>웹 사이트 각 페이지 특정 기준으로 묵을 수 있음(페이지 뷰 될때마다 기록이 되기 때문에 히트단위 측정 기준과 같음)</li>
+<li>맞춤 측정 기준은 맞춤 보고서에서 확인할 수 있지만 콘텐츠 분류로 커스터마이징한 콘텐츠 그룹은 행동 보고서에서 확인 가능</li>
+<li>각 페이지를 기능 별로 구분하거나 카테고리화 할때 쓸 수 있는 기능</li>
 </ul>
+<ol>
+<li><p>추적 코드 설정 : 사이트 태그를 직접 웨사이트 히트시 발생</p>
 </li>
-</ul>
+<li><p>추출 추가 : URL 정규식을 활용한 콘텐츠 분류</p>
+</li>
+<li><p>규칙 정의 : 가장 쉬운 방법, 페이지 URL, 페이지 제목, 화면 이름(앱)을 조건(포함,같음,제외,시작 등)을 활용하여 콘텐츠 분류규칙 정의 : 가장 쉬운 방법, 페이지 URL, 페이지 제목, 화면 이름(앱)을 조건(포함,같음,제외,시작 등)을 활용하여 콘텐츠 분류</p>
+</li>
+</ol>
+</li>
+</ol>
 
     </div>
 
@@ -367,14 +325,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/04/29/GA-3/" rel="prev" title="GA-3">
-                  <i class="fa fa-chevron-left"></i> GA-3
+                <a href="/2021/05/02/GA-6/" rel="prev" title="GA-6">
+                  <i class="fa fa-chevron-left"></i> GA-6
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/05/01/GA-5/" rel="next" title="GA-5">
-                  GA-5 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
