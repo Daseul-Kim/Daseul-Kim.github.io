@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
-
-
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -15,15 +13,14 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
-
-<script class="hexo-configurations">
+<script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"daseul-kim.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"daseul-kim.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
-<meta name="description" content="data science, digital marketing">
+
+  <meta name="description" content="data science, digital marketing">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Digital marketing">
 <meta property="og:url" content="https://daseul-kim.io/page/5/index.html">
@@ -33,11 +30,10 @@
 <meta property="article:author" content="Daseul-Kim">
 <meta name="twitter:card" content="summary">
 
-
 <link rel="canonical" href="https://daseul-kim.io/page/5/">
 
 
-<script class="page-configurations">
+<script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -46,66 +42,60 @@
     lang   : 'en'
   };
 </script>
-<title>Digital marketing</title>
+
+  <title>Digital marketing</title>
   
+
+
 
 
 
 
   <noscript>
   <style>
-  body { margin-top: 2rem; }
-
+  .use-motion .brand,
   .use-motion .menu-item,
-  .use-motion .sidebar,
+  .sidebar-inner,
   .use-motion .post-block,
   .use-motion .pagination,
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
+  .use-motion .collection-header { opacity: initial; }
 
   .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
+  .use-motion .site-subtitle {
     opacity: initial;
     top: initial;
   }
 
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <i class="logo-line"></i>
+      <span class="logo-line-before"><i></i></span>
       <h1 class="site-title">Digital marketing</h1>
-      <i class="logo-line"></i>
+      <span class="logo-line-after"><i></i></span>
     </a>
   </div>
 
@@ -118,88 +108,60 @@
 
 
 
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
 
 
 
 </div>
-        
-  
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-overview-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-        </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Daseul-Kim</p>
-  <div class="site-description" itemprop="description">data science, digital marketing</div>
-</div>
-<div class="site-state-wrap site-overview-item animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">48</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
-      </div>
-  </nav>
-</div>
-
-
-
-        </div>
-      </div>
-    </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
-
-
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
 
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
-    <div class="main-inner index posts-expand">
-
-    
-
-
-<div class="post-block">
+          <div class="content index posts-expand">
+            
+      
   
   
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/16/%EB%A7%88%EC%BC%80%ED%8C%85%ED%8A%B8%EB%A0%8C%EB%93%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -213,23 +175,22 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/16/%EB%A7%88%EC%BC%80%ED%8C%85%ED%8A%B8%EB%A0%8C%EB%93%9C/" class="post-title-link" itemprop="url">마케팅트렌드</a>
+          
+            <a href="/2021/03/16/%EB%A7%88%EC%BC%80%ED%8C%85%ED%8A%B8%EB%A0%8C%EB%93%9C/" class="post-title-link" itemprop="url">마케팅트렌드</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-      <time title="Created: 2021-03-16 11:23:39 / Modified: 11:27:12" itemprop="dateCreated datePublished" datetime="2021-03-16T11:23:39+09:00">2021-03-16</time>
-    </span>
+              <time title="Created: 2021-03-16 11:23:39 / Modified: 11:27:12" itemprop="dateCreated datePublished" datetime="2021-03-16T11:23:39+09:00">2021-03-16</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -238,6 +199,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           <h2 id="마케팅에-활용하기-좋은-현-트렌드-조사"><a href="#마케팅에-활용하기-좋은-현-트렌드-조사" class="headerlink" title="마케팅에 활용하기 좋은 현 트렌드 조사"></a>마케팅에 활용하기 좋은 현 트렌드 조사</h2><pre><code>  1. Real me
 </code></pre>
 <ul>
@@ -284,25 +247,18 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
+  
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/15/%EB%AF%B8%EB%94%94%EC%96%B4%EB%AF%B9%EC%8A%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -316,23 +272,22 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/15/%EB%AF%B8%EB%94%94%EC%96%B4%EB%AF%B9%EC%8A%A4/" class="post-title-link" itemprop="url">미디어믹스</a>
+          
+            <a href="/2021/03/15/%EB%AF%B8%EB%94%94%EC%96%B4%EB%AF%B9%EC%8A%A4/" class="post-title-link" itemprop="url">미디어믹스</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-      <time title="Created: 2021-03-15 16:13:43 / Modified: 16:33:31" itemprop="dateCreated datePublished" datetime="2021-03-15T16:13:43+09:00">2021-03-15</time>
-    </span>
+              <time title="Created: 2021-03-15 16:13:43 / Modified: 16:33:31" itemprop="dateCreated datePublished" datetime="2021-03-15T16:13:43+09:00">2021-03-15</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -341,6 +296,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           <h3 id="0-디지털-마케팅-전략"><a href="#0-디지털-마케팅-전략" class="headerlink" title="0. 디지털 마케팅 전략"></a>0. 디지털 마케팅 전략</h3><ol>
 <li>Analysis</li>
 </ol>
@@ -439,25 +396,18 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
+  
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/12/%EA%B4%80%EC%8B%AC%EC%9E%88%EB%8A%94-%EB%A7%A4%EC%B2%B4-%EC%82%AC%EB%A1%80-%EA%B3%B5%EC%9C%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -471,23 +421,22 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/12/%EA%B4%80%EC%8B%AC%EC%9E%88%EB%8A%94-%EB%A7%A4%EC%B2%B4-%EC%82%AC%EB%A1%80-%EA%B3%B5%EC%9C%A0/" class="post-title-link" itemprop="url">관심있는 매체 사례 공유</a>
+          
+            <a href="/2021/03/12/%EA%B4%80%EC%8B%AC%EC%9E%88%EB%8A%94-%EB%A7%A4%EC%B2%B4-%EC%82%AC%EB%A1%80-%EA%B3%B5%EC%9C%A0/" class="post-title-link" itemprop="url">관심있는 매체 사례 공유</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-      <time title="Created: 2021-03-12 16:37:38 / Modified: 16:38:51" itemprop="dateCreated datePublished" datetime="2021-03-12T16:37:38+09:00">2021-03-12</time>
-    </span>
+              <time title="Created: 2021-03-12 16:37:38 / Modified: 16:38:51" itemprop="dateCreated datePublished" datetime="2021-03-12T16:37:38+09:00">2021-03-12</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -496,6 +445,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           <h1 id="1-Facebooks-Ads"><a href="#1-Facebooks-Ads" class="headerlink" title="1. Facebooks Ads"></a>1. Facebooks Ads</h1><ul>
 <li><p>특징 :</p>
 <p>  <strong>여러 기기에 광고 노출</strong></p>
@@ -566,25 +517,18 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
+  
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/11/%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%EB%A7%88%EC%BC%80%ED%8C%85-%ED%88%B4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -598,23 +542,22 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/11/%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%EB%A7%88%EC%BC%80%ED%8C%85-%ED%88%B4/" class="post-title-link" itemprop="url">퍼포먼스 마케팅 툴</a>
+          
+            <a href="/2021/03/11/%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%EB%A7%88%EC%BC%80%ED%8C%85-%ED%88%B4/" class="post-title-link" itemprop="url">퍼포먼스 마케팅 툴</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-      <time title="Created: 2021-03-11 13:06:39 / Modified: 13:08:10" itemprop="dateCreated datePublished" datetime="2021-03-11T13:06:39+09:00">2021-03-11</time>
-    </span>
+              <time title="Created: 2021-03-11 13:06:39 / Modified: 13:08:10" itemprop="dateCreated datePublished" datetime="2021-03-11T13:06:39+09:00">2021-03-11</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -623,6 +566,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           <h3 id="1-툴의-종류"><a href="#1-툴의-종류" class="headerlink" title="1. 툴의 종류"></a>1. 툴의 종류</h3><p><strong>– 중급 이상의 스킬을 필요로 하는 구글 애널리틱스</strong></p>
 <p><strong>– 마케터가 원하는 형태로 데이터 추출이 가능한 SQL</strong></p>
 <p><strong>– 정확한 유저 인사이트 도출을 위한 파이어베이스</strong></p>
@@ -704,25 +649,18 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
+  
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/10/performance-marketing-and-growth-hacking/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -736,23 +674,22 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/10/performance-marketing-and-growth-hacking/" class="post-title-link" itemprop="url">performance marketing and growth hacking</a>
+          
+            <a href="/2021/03/10/performance-marketing-and-growth-hacking/" class="post-title-link" itemprop="url">performance marketing and growth hacking</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-      <time title="Created: 2021-03-10 11:08:08 / Modified: 11:09:34" itemprop="dateCreated datePublished" datetime="2021-03-10T11:08:08+09:00">2021-03-10</time>
-    </span>
+              <time title="Created: 2021-03-10 11:08:08 / Modified: 11:09:34" itemprop="dateCreated datePublished" datetime="2021-03-10T11:08:08+09:00">2021-03-10</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -761,6 +698,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           <h2 id="0-디지털-마케팅"><a href="#0-디지털-마케팅" class="headerlink" title="0. 디지털 마케팅"></a>0. 디지털 마케팅</h2><ul>
 <li><strong>디지털 마케팅은 크게 퍼포먼스 마케터, 콘텐츠 마케터으로 나뉜다 :</strong></li>
 </ul>
@@ -820,25 +759,18 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
+  
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/03/TIL-210303/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -852,23 +784,22 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/03/TIL-210303/" class="post-title-link" itemprop="url">TIL 210303</a>
+          
+            <a href="/2021/03/03/TIL-210303/" class="post-title-link" itemprop="url">TIL 210303</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-      <time title="Created: 2021-03-03 23:45:39 / Modified: 23:47:06" itemprop="dateCreated datePublished" datetime="2021-03-03T23:45:39+09:00">2021-03-03</time>
-    </span>
+              <time title="Created: 2021-03-03 23:45:39 / Modified: 23:47:06" itemprop="dateCreated datePublished" datetime="2021-03-03T23:45:39+09:00">2021-03-03</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -877,6 +808,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           <p>Shell command<br>cd : change directory</p>
 <p>mv : move</p>
 <p>mkdir : make directory</p>
@@ -949,25 +882,18 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
+  
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/03/postTIL-210303/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -981,22 +907,21 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/03/postTIL-210303/" class="post-title-link" itemprop="url">postTIL : 210303</a>
+          
+            <a href="/2021/03/03/postTIL-210303/" class="post-title-link" itemprop="url">postTIL : 210303</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-03-03 23:43:41" itemprop="dateCreated datePublished" datetime="2021-03-03T23:43:41+09:00">2021-03-03</time>
-    </span>
+              <time title="Created: 2021-03-03 23:43:41" itemprop="dateCreated datePublished" datetime="2021-03-03T23:43:41+09:00">2021-03-03</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -1005,6 +930,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           
       
     </div>
@@ -1012,25 +939,18 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
+  
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://daseul-kim.io/2021/03/03/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1044,22 +964,21 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/03/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+          
+            <a href="/2021/03/03/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
         </h2>
 
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-03-03 16:49:15" itemprop="dateCreated datePublished" datetime="2021-03-03T16:49:15+09:00">2021-03-03</time>
-    </span>
+              <time title="Created: 2021-03-03 16:49:15" itemprop="dateCreated datePublished" datetime="2021-03-03T16:49:15+09:00">2021-03-03</time>
+            </span>
 
-  
-</div>
+          
 
         </div>
       </header>
@@ -1068,6 +987,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
+
+      
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -1088,21 +1009,24 @@
     
     
     
-
-    <footer class="post-footer">
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
+      </footer>
   </article>
-</div>
+  
+  
+  
 
 
-
-
+  
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
   </nav>
 
+
+
+          </div>
+          
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1111,7 +1035,7 @@
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
     if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
       if (activeTab) {
         activeTab.click();
       }
@@ -1120,19 +1044,79 @@
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
       if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
+      let commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
   }
 </script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Daseul-Kim</p>
+  <div class="site-description" itemprop="description">data science, digital marketing</div>
 </div>
-  </main>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
 
-  <footer class="footer">
-    <div class="footer-inner">
 
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
 
 <div class="copyright">
+  
   &copy; 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
@@ -1140,15 +1124,39 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Daseul-Kim</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
-    </div>
-  </footer>
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
 
   
 
@@ -1157,11 +1165,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
-
-
-
+  
 
 </body>
 </html>
